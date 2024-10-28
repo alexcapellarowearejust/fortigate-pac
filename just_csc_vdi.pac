@@ -42,6 +42,7 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "dlws.bloomberg.com")||
     dnsDomainIs(host, "adminoe24.fnzc.co.uk")||
     dnsDomainIs(host, "adminte43.fnzc.co.uk")||
+    dnsDomainIs(host, "oe24servicemassl.fnzc.co.uk")||
     dnsDomainIs(host, "orbus.wearejust.co.uk")||
     dnsDomainIs(host, "ucupdates-r2.wearejust.co.uk") ||
     dnsDomainIs(host, "lyncdiscoverinternal.wearejust.co.uk") ||
@@ -86,6 +87,14 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, ".justdpprodsanertpfd001.file.core.windows.net") ||
     dnsDomainIs(host, ".azuredatabricks.net") ||
     dnsDomainIs(host, ".blueprismcloud.com") ||
+    dnsDomainIs(host, "amsretirement.co.uk") ||
+    dnsDomainIs(host, "gstatic.com/recaptcha") ||
+    dnsDomainIs(host, "google.com/recaptcha") ||
+    dnsDomainIs(host, "fonts.googleapis.com") ||
+    dnsDomainIs(host, "use.fontawesome.com") ||
+    dnsDomainIs(host, "login.okta.com") ||
+    dnsDomainIs(host, "ok14static.oktacdn.com") ||
+    dnsDomainIs(host, "us-rgaext.customdomains.okta.com") ||
     dnsDomainIs(host, "cloudflareportal.com") ||
     dnsDomainIs(host, "cloudflareok.com") ||
     dnsDomainIs(host, "cloudflarecp.com") ||
@@ -137,6 +146,8 @@ if (
     dnsDomainIs(host, "www.whatismyip.com") ||
     dnsDomainIs(host, "*.scottishwidowsplatform.com") ||
     dnsDomainIs(host, "bridger.lexisnexis.eu") ||
+    dnsDomainIs(host, "canadalifeqptest-api.ctc.uk.com") ||
+    dnsDomainIs(host, "testone.testapi.annuityquote.standardlife.co.uk") ||
     dnsDomainIs(host, "dataportal.matrixsolutions.co.uk") ||
     (shExpMatch(host, "annuity-messaging.rwy-aviva.co.uk")) ||
     (shExpMatch(host, "b2bbts-oat.canadalife.ie")) ||
@@ -147,11 +158,13 @@ if (
     (shExpMatch(host, "sftp.lcp.uk.com")) ||
     (shExpMatch(host, "*.scottishwidowsplatform.com")) ||
     (shExpMatch(host, "bridger.lexisnexis.eu")) ||
+    (shExpMatch(host, "canadalifeqptest-api.ctc.uk.com")) ||
+    (shExpMatch(host, "testone.testapi.annuityquote.standardlife.co.uk")) ||
     (shExpMatch(host, "dataportal.matrixsolutions.co.uk")) ||
     dnsDomainIs(host, "dms.markitserv.com")
     ) 
  {
-    return "PROXY cscproxy.live01.lan.local:3128";
+    return "HTTPS saeukgbm27.proxy.cloudflare-gateway.com:443";
  }
 
 	/* FTP goes directly */
@@ -159,18 +172,6 @@ if (
 		return "DIRECT";
 	}
 
-	/* Updates are directly accessible */
-	if (((localHostOrDomainIs(host, "trust.zscaler.com")) ||
-        (localHostOrDomainIs(host, ".zscalertwo.net")) ||
-		(localHostOrDomainIs(host, "trust.zscaler.net")) ||
-		(localHostOrDomainIs(host, "trust.zscalerone.net")) ||
-		(localHostOrDomainIs(host, "trust.zscalertwo.net")) ||
-		(localHostOrDomainIs(host, "trust.zscloud.net")) ) &&
-		(url.substring(0,5) == "http:" || url.substring(0,6) == "https:")){
-		return "DIRECT";
-	}
-
-	/* Default Traffic Forwarding. Forwarding to CSC on port 80, if not available, send to Zscaler on 10387 */
-	/* return "PROXY 10.2.95.61:80; PROXY 165.225.80.40:10387"; */
-	return "PROXY 165.225.16.160:10387; PROXY 147.161.141.65:10387";
+	return "HTTPS saeukgbm27.proxy.cloudflare-gateway.com:443";
+	
 }
