@@ -98,6 +98,7 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "cloudflareportal.com") ||
     dnsDomainIs(host, "cloudflareok.com") ||
     dnsDomainIs(host, "cloudflarecp.com") ||
+    dnsDomainIs(host, ".visualstudio.com") ||
     dnsDomainIs(host, ".blob.core.windows.net") ||
     shExpMatch(host, "*.cloudflareclient.com") ||
     dnsDomainIs(host, "a.nel.cloudflare.com")
