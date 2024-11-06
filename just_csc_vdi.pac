@@ -15,7 +15,98 @@ function FindProxyForURL(url, host) {
 	    isInNet(resolved_ip, "169.150.104.0","0.0.7.255") || 
 	    isInNet(resolved_ip, "167.234.48.0","0.0.15.255") || 
 	    isInNet(resolved_ip, "136.245.64.0","0.0.63.255") || 
-	    isInNet(resolved_ip, "193.108.18.192","0.0.0.3") ||
+	    isInNet(resolved_ip, "193.108.18.192","0.0.0.3") 
+        isInNet(host, "13.107.6.152", "0.0.0.1") ||
+        isInNet(host, "13.107.18.10", "0.0.0.1") ||
+	isInNet(host, "13.107.128.0", "0.0.3.255") ||
+        isInNet(host, "23.103.160.0", "0.0.15.255") ||
+        isInNet(host, "40.96.0.0", "0.7.255.255") ||
+        isInNet(host, "40.104.0.0", "0.1.255.255") ||
+        isInNet(host, "52.96.0.0", "0.3.255.255") ||
+        isInNet(host, "131.253.33.215", "0.0.0.0") ||
+        isInNet(host, "132.245.0.0", "0.0.255.255") ||
+        isInNet(host, "150.171.32.0", "0.0.3.255") ||
+        isInNet(host, "204.79.197.215", "0.0.0.0") ||
+        isInNet(host, "40.92.0.0", "0.1.255.255") ||
+        isInNet(host, "40.107.0.0", "0.0.255.255") ||
+        isInNet(host, "52.100.0.0", "0.3.255.255") ||
+        isInNet(host, "52.238.78.88", "0.0.0.0") ||
+        isInNet(host, "104.47.0.0", "0.0.127.255") ||
+        isInNet(host, "13.107.136.0", "0.0.3.255") ||
+        isInNet(host, "40.108.128.0", "0.0.127.255") ||
+        isInNet(host, "52.104.0.0", "0.3.255.255") ||
+        isInNet(host, "104.146.128.0", "0.0.127.255") ||
+        isInNet(host, "150.171.40.0", "0.0.3.255") ||
+        isInNet(host, "52.112.0.0", "0.3.255.255") ||
+        isInNet(host, "52.122.0.0", "0.1.255.255") ||
+        isInNet(host, "52.238.119.141", "0.0.0.0") ||
+        isInNet(host, "52.244.160.207", "0.0.0.0") ||
+        isInNet(host, "13.107.6.171", "0.0.0.0") ||
+        isInNet(host, "13.107.18.15", "0.0.0.0") ||
+        isInNet(host, "13.107.140.6", "0.0.0.0") ||
+        isInNet(host, "52.108.0.0", "0.3.255.255") ||
+        isInNet(host, "52.244.37.168", "0.0.0.0") ||
+        isInNet(host, "20.20.32.0", "0.0.31.255") ||
+        isInNet(host, "20.190.128.0", "0.0.63.255") ||
+        isInNet(host, "20.231.128.0", "0.0.31.255") ||
+        isInNet(host, "40.126.0.0", "0.0.63.255") ||
+        isInNet(host, "13.107.6.192", "0.0.0.0") ||
+        isInNet(host, "13.107.9.192", "0.0.0.0") ||
+        isInNet(host, "2603:1006::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1016::", "ffff:ffff:ffff:fff0::") ||
+        isInNet(host, "2603:1026::", "ffff:ffff:ffff:fff0::") ||
+        isInNet(host, "2603:1036::", "ffff:ffff:ffff:fff0::") ||
+        isInNet(host, "2603:1046::", "ffff:ffff:ffff:fff0::") ||
+        isInNet(host, "2603:1056::", "ffff:ffff:ffff:fff0::") ||
+        isInNet(host, "2620:1ec:4::152", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:4::153", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:c::10", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:c::11", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:d::10", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:d::11", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:8f0::", "ffff:ffff:ffff:ffc0::") ||
+        isInNet(host, "2620:1ec:900::", "ffff:ffff:ffff:ffc0::") ||
+        isInNet(host, "2620:1ec:a92::152", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:a92::153", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f400::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2a01:111:f403::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1061:1300::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1063:6000::", "ffff:ffff:ffff:e000::") ||
+        isInNet(host, "2620:1ec:8f8::", "ffff:ffff:ffff:ffc0::") ||
+        isInNet(host, "2620:1ec:908::", "ffff:ffff:ffff:ffc0::") ||
+        isInNet(host, "2a01:111:f402::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1063::", "ffff:ffff:ffff:c000::") ||
+        isInNet(host, "2603:1027::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1037::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1047::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1057::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1063:2000::", "ffff:ffff:ffff:c000::") ||
+        isInNet(host, "2620:1ec:6::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2620:1ec:40::", "ffff:ffff:ffff:fc00::") ||
+        isInNet(host, "2603:1006:1400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1016:2400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1026:2400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1036:2400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1046:1400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1056:1400::", "ffff:ffff:ffff:ff00::") ||
+        isInNet(host, "2603:1063:2000::", "ffff:ffff:ffff:c000::") ||
+        isInNet(host, "2620:1ec:c::15", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:8fc::6", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2620:1ec:a92::171", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f100:2000::a83e:3019", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f100:2002::8975:2d79", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f100:2002::8975:2da8", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f100:7000::6fdd:6cd5", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2a01:111:f100:a004::bfeb:88cf", "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff") ||
+        isInNet(host, "2603:1006:2000::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1007:200::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1016:1400::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1017::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1026:3000::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1027:1::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1036:3000::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1037:1::", "ffff:ffff:ffff:ffff:ffff:ffff::") ||
+        isInNet(host, "2603:1046:2000::", "ffff:ffff:ffff:ffff:ffff:ffff) ||
 	    privateIP.test(host))
 	return "DIRECT";
 	
@@ -240,6 +331,168 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, ".sway-extensions.com" ||
     dnsDomainIs(host, "sway.com" ||
     dnsDomainIs(host, ".sway.com" ||
+    dnsDomainIs(host, ".cloud.microsoft") ||
+    dnsDomainIs(host, ".static.microsoft") ||
+    dnsDomainIs(host, ".usercontent.microsoft") ||
+    dnsDomainIs(host, "outlook.cloud.microsoft") ||
+    dnsDomainIs(host, "outlook.office.com") ||
+    dnsDomainIs(host, "outlook.office365.com") ||
+    dnsDomainIs(host, "smtp.office365.com") ||
+    dnsDomainIs(host, ".protection.outlook.com") ||
+    dnsDomainIs(host, ".mail.protection.outlook.com") ||
+    dnsDomainIs(host, ".mx.microsoft") ||
+    dnsDomainIs(host, ".sharepoint.com") ||
+    dnsDomainIs(host, "ssw.live.com") ||
+    dnsDomainIs(host, "storage.live.com") ||
+    dnsDomainIs(host, ".search.production.apac.trafficmanager.net") ||
+    dnsDomainIs(host, ".search.production.emea.trafficmanager.net") ||
+    dnsDomainIs(host, ".search.production.us.trafficmanager.net") ||
+    dnsDomainIs(host, ".wns.windows.com") ||
+    dnsDomainIs(host, "admin.onedrive.com") ||
+    dnsDomainIs(host, "officeclient.microsoft.com") ||
+    dnsDomainIs(host, "g.live.com") ||
+    dnsDomainIs(host, "oneclient.sfx.ms") ||
+    dnsDomainIs(host, ".sharepointonline.com") ||
+    dnsDomainIs(host, "spoprod-a.akamaihd.net") ||
+    dnsDomainIs(host, ".svc.ms") ||
+    dnsDomainIs(host, ".lync.com") ||
+    dnsDomainIs(host, ".teams.cloud.microsoft") ||
+    dnsDomainIs(host, ".teams.microsoft.com") ||
+    dnsDomainIs(host, "teams.cloud.microsoft") ||
+    dnsDomainIs(host, "teams.microsoft.com") ||
+    dnsDomainIs(host, ".keydelivery.mediaservices.windows.net") ||
+    dnsDomainIs(host, ".streaming.mediaservices.windows.net") ||
+    dnsDomainIs(host, "mlccdn.blob.core.windows.net") ||
+    dnsDomainIs(host, "aka.ms") ||
+    dnsDomainIs(host, ".users.storage.live.com") ||
+    dnsDomainIs(host, "adl.windows.com") ||
+    dnsDomainIs(host, ".secure.skypeassets.com") ||
+    dnsDomainIs(host, "mlccdnprod.azureedge.net") ||
+    dnsDomainIs(host, ".skype.com") ||
+    dnsDomainIs(host, "compass-ssl.microsoft.com") ||
+    dnsDomainIs(host, ".officeapps.live.com") ||
+    dnsDomainIs(host, ".online.office.com") ||
+    dnsDomainIs(host, "office.live.com") ||
+    dnsDomainIs(host, ".office.net") ||
+    dnsDomainIs(host, ".onenote.com") ||
+    dnsDomainIs(host, ".microsoft.com") ||
+    dnsDomainIs(host, "cdn.onenote.net") ||
+    dnsDomainIs(host, "ajax.aspnetcdn.com") ||
+    dnsDomainIs(host, "apis.live.net") ||
+    dnsDomainIs(host, "officeapps.live.com") ||
+    dnsDomainIs(host, "www.onedrive.com") ||
+    dnsDomainIs(host, ".auth.microsoft.com") ||
+    dnsDomainIs(host, ".msftidentity.com") ||
+    dnsDomainIs(host, ".msidentity.com") ||
+    dnsDomainIs(host, "account.activedirectory.windowsazure.com") ||
+    dnsDomainIs(host, "accounts.accesscontrol.windows.net") ||
+    dnsDomainIs(host, "adminwebservice.microsoftonline.com") ||
+    dnsDomainIs(host, "api.passwordreset.microsoftonline.com") ||
+    dnsDomainIs(host, "autologon.microsoftazuread-sso.com") ||
+    dnsDomainIs(host, "becws.microsoftonline.com") ||
+    dnsDomainIs(host, "ccs.login.microsoftonline.com") ||
+    dnsDomainIs(host, "clientconfig.microsoftonline-p.net") ||
+    dnsDomainIs(host, "companymanager.microsoftonline.com") ||
+    dnsDomainIs(host, "device.login.microsoftonline.com") ||
+    dnsDomainIs(host, "graph.microsoft.com") ||
+    dnsDomainIs(host, "graph.windows.net") ||
+    dnsDomainIs(host, "login-us.microsoftonline.com") ||
+    dnsDomainIs(host, "login.microsoft.com") ||
+    dnsDomainIs(host, "login.microsoftonline-p.com") ||
+    dnsDomainIs(host, "login.microsoftonline.com") ||
+    dnsDomainIs(host, "login.windows.net") ||
+    dnsDomainIs(host, "logincert.microsoftonline.com") ||
+    dnsDomainIs(host, "loginex.microsoftonline.com") ||
+    dnsDomainIs(host, "nexus.microsoftonline-p.com") ||
+    dnsDomainIs(host, "passwordreset.microsoftonline.com") ||
+    dnsDomainIs(host, "provisioningapi.microsoftonline.com") ||
+    dnsDomainIs(host, ".hip.live.com") ||
+    dnsDomainIs(host, ".microsoftonline-p.com") ||
+    dnsDomainIs(host, ".microsoftonline.com") ||
+    dnsDomainIs(host, ".msauth.net") ||
+    dnsDomainIs(host, ".msauthimages.net") ||
+    dnsDomainIs(host, ".msecnd.net") ||
+    dnsDomainIs(host, ".msftauth.net") ||
+    dnsDomainIs(host, ".msftauthimages.net") ||
+    dnsDomainIs(host, ".phonefactor.net") ||
+    dnsDomainIs(host, "enterpriseregistration.windows.net") ||
+    dnsDomainIs(host, "policykeyservice.dc.ad.msft.net") ||
+    dnsDomainIs(host, ".protection.office.com") ||
+    dnsDomainIs(host, ".security.microsoft.com") ||
+    dnsDomainIs(host, "compliance.microsoft.com") ||
+    dnsDomainIs(host, "defender.microsoft.com") ||
+    dnsDomainIs(host, "protection.office.com") ||
+    dnsDomainIs(host, "purview.microsoft.com") ||
+    dnsDomainIs(host, "security.microsoft.com") ||
+    dnsDomainIs(host, ".portal.cloudappsecurity.com") ||
+    dnsDomainIs(host, "firstpartyapps.oaspapps.com") ||
+    dnsDomainIs(host, "prod.firstpartyapps.oaspapps.com.akadns.net") ||
+    dnsDomainIs(host, "telemetryservice.firstpartyapps.oaspapps.com") ||
+    dnsDomainIs(host, "wus-firstpartyapps.oaspapps.com") ||
+    dnsDomainIs(host, ".aria.microsoft.com") ||
+    dnsDomainIs(host, ".events.data.microsoft.com") ||
+    dnsDomainIs(host, ".o365weve.com") ||
+    dnsDomainIs(host, "amp.azure.net") ||
+    dnsDomainIs(host, "appsforoffice.microsoft.com") ||
+    dnsDomainIs(host, "assets.onestore.ms") ||
+    dnsDomainIs(host, "auth.gfx.ms") ||
+    dnsDomainIs(host, "c1.microsoft.com") ||
+    dnsDomainIs(host, "dgps.support.microsoft.com") ||
+    dnsDomainIs(host, "docs.microsoft.com") ||
+    dnsDomainIs(host, "msdn.microsoft.com") ||
+    dnsDomainIs(host, "platform.linkedin.com") ||
+    dnsDomainIs(host, "prod.msocdn.com") ||
+    dnsDomainIs(host, "shellprod.msocdn.com") ||
+    dnsDomainIs(host, "support.microsoft.com") ||
+    dnsDomainIs(host, "technet.microsoft.com") ||
+    dnsDomainIs(host, ".office365.com") ||
+    dnsDomainIs(host, ".aadrm.com") ||
+    dnsDomainIs(host, ".azurerms.com") ||
+    dnsDomainIs(host, ".informationprotection.azure.com") ||
+    dnsDomainIs(host, "ecn.dev.virtualearth.net") ||
+    dnsDomainIs(host, "informationprotection.hosting.portal.azure.net") ||
+    dnsDomainIs(host, "dc.services.visualstudio.com") ||
+    dnsDomainIs(host, "mem.gfx.ms") ||
+    dnsDomainIs(host, "staffhub.ms") ||
+    dnsDomainIs(host, "staffhubweb.azureedge.net") ||
+    dnsDomainIs(host, "o15.officeredir.microsoft.com") ||
+    dnsDomainIs(host, "officepreviewredir.microsoft.com") ||
+    dnsDomainIs(host, "officeredir.microsoft.com") ||
+    dnsDomainIs(host, "r.office.microsoft.com") ||
+    dnsDomainIs(host, "activation.sls.microsoft.com") ||
+    dnsDomainIs(host, "crl.microsoft.com") ||
+    dnsDomainIs(host, "office15client.microsoft.com") ||
+    dnsDomainIs(host, "officeclient.microsoft.com") ||
+    dnsDomainIs(host, "go.microsoft.com") ||
+    dnsDomainIs(host, "ajax.aspnetcdn.com") ||
+    dnsDomainIs(host, "cdn.odc.officeapps.live.com") ||
+    dnsDomainIs(host, "officecdn.microsoft.com") ||
+    dnsDomainIs(host, "officecdn.microsoft.com.edgesuite.net") ||
+    dnsDomainIs(host, "otelrules.azureedge.net") ||
+    dnsDomainIs(host, ".virtualearth.net") ||
+    dnsDomainIs(host, "c.bing.net") ||
+    dnsDomainIs(host, "ocos-office365-s2s.msedge.net") ||
+    dnsDomainIs(host, "tse1.mm.bing.net") ||
+    dnsDomainIs(host, "www.bing.com") ||
+    dnsDomainIs(host, ".acompli.net") ||
+    dnsDomainIs(host, ".outlookmobile.com") ||
+    dnsDomainIs(host, "login.windows-ppe.net") ||
+    dnsDomainIs(host, "account.live.com") ||
+    dnsDomainIs(host, "login.live.com") ||
+    dnsDomainIs(host, "www.acompli.com") ||
+    dnsDomainIs(host, ".appex-rf.msn.com") ||
+    dnsDomainIs(host, ".appex.bing.com") ||
+    dnsDomainIs(host, "c.bing.com") ||
+    dnsDomainIs(host, "c.live.com") ||
+    dnsDomainIs(host, "d.docs.live.net") ||
+    dnsDomainIs(host, "docs.live.net") ||
+    dnsDomainIs(host, "partnerservices.getmicrosoftkey.com") ||
+    dnsDomainIs(host, "signup.live.com") ||
+    dnsDomainIs(host, ".yammer.com") ||
+    dnsDomainIs(host, ".yammerusercontent.com") ||
+    dnsDomainIs(host, ".assets-yammer.com") ||
+    dnsDomainIs(host, "www.outlook.com") ||
+    dnsDomainIs(host, "eus-www.sway-cdn.com") ||
     shExpMatch(host, "*.cloudflareclient.com") ||
     dnsDomainIs(host, "a.nel.cloudflare.com")
    )
