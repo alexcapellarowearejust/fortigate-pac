@@ -111,6 +111,7 @@ function FindProxyForURL(url, host) {
     shExpMatch(host, "*.lync.com") ||
     dnsDomainIs(host, "teams.microsoft.com") ||
     dnsDomainIs(host, ".teams.microsoft.com") ||
+    dnsDomainIs(host, ".microsoft.com") ||
     shExpMatch(host, "*.cloudflareclient.com") ||
     dnsDomainIs(host, "a.nel.cloudflare.com")
    )
