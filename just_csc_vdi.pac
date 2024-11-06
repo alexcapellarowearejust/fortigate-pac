@@ -15,10 +15,10 @@ function FindProxyForURL(url, host) {
 	    isInNet(resolved_ip, "169.150.104.0","0.0.7.255") || 
 	    isInNet(resolved_ip, "167.234.48.0","0.0.15.255") || 
 	    isInNet(resolved_ip, "136.245.64.0","0.0.63.255") || 
-	    isInNet(resolved_ip, "193.108.18.192","0.0.0.3") 
+	    isInNet(resolved_ip, "193.108.18.192","0.0.0.3") ||
         isInNet(host, "13.107.6.152", "0.0.0.1") ||
         isInNet(host, "13.107.18.10", "0.0.0.1") ||
-	isInNet(host, "13.107.128.0", "0.0.3.255") ||
+		isInNet(host, "13.107.128.0", "0.0.3.255") ||
         isInNet(host, "23.103.160.0", "0.0.15.255") ||
         isInNet(host, "40.96.0.0", "0.7.255.255") ||
         isInNet(host, "40.104.0.0", "0.1.255.255") ||
