@@ -35,7 +35,6 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "equityrelease.dev.partnership.co.uk")||
     dnsDomainIs(host, "just-snow.wearejust.co.uk") ||
     dnsDomainIs(host, ".wearejust.co.uk/epi") ||
-    dnsDomainIs(host, "provisioningapi.microsoftonline.com") ||
     dnsDomainIs(host, "justretirement-admin.sharepoint.com") ||
     dnsDomainIs(host, "T3711.wework.com")||
     dnsDomainIs(host, "clearpass.justgroupplc.co.uk")||
