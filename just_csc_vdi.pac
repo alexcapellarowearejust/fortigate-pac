@@ -37,6 +37,7 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "autodiscover.justretirement.com") ||
     dnsDomainIs(host, "autodiscover.hubfs.co.uk") ||
     dnsDomainIs(host, "autodiscover.partnership.co.uk") ||
+    dnsDomainIs(host, "provisioningapi.microsoftonline.com") ||
     dnsDomainIs(host, "definedbenefit.partnership.co.uk")||
     dnsDomainIs(host, "ams.partnership.co.uk")  ||
     dnsDomainIs(host, "equity-release.partnership.co.uk")  ||
