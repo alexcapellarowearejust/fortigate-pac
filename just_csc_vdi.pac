@@ -7,6 +7,15 @@ function FindProxyForURL(url, host) {
 //	    isInNet(resolved_ip, "192.0.2.0","255.255.255.0") || 
 	    isInNet(resolved_ip, "10.0.0.0","255.0.0.0") || 
 //	    isInNet(resolved_ip, "10.26.0.0","255.255.0.0") || 
+	    isInNet(resolved_ip, "52.244.160.207","255.255.255.255") || 
+	    isInNet(resolved_ip, "52.238.119.141","255.255.255.255") || 
+	    isInNet(resolved_ip, "52.122.0.0","0.1.255.255") || 
+	    isInNet(resolved_ip, "52.112.0.0","0.3.255.255") || 
+	    isInNet(resolved_ip, "52.129.96.0","0.0.15.255") || 
+	    isInNet(resolved_ip, "169.150.104.0","0.0.7.255") || 
+	    isInNet(resolved_ip, "167.234.48.0","0.0.15.255") || 
+	    isInNet(resolved_ip, "136.245.64.0","0.0.63.255") || 
+	    isInNet(resolved_ip, "193.108.18.192","0.0.0.3") 
 	    privateIP.test(host))
 	return "DIRECT";
 	
@@ -98,6 +107,7 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "cloudflareok.com") ||
     dnsDomainIs(host, "cloudflarecp.com") ||
     dnsDomainIs(host, ".blob.core.windows.net") ||
+    shExpMatch(host, "*.lync.com") ||
     shExpMatch(host, "*.cloudflareclient.com") ||
     dnsDomainIs(host, "a.nel.cloudflare.com")
    )
