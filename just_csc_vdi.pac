@@ -109,6 +109,8 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "cloudflarecp.com") ||
     dnsDomainIs(host, ".blob.core.windows.net") ||
     shExpMatch(host, "*.lync.com") ||
+    dnsDomainIs(host, "teams.microsoft.com") ||
+    dnsDomainIs(host, ".teams.microsoft.com") ||
     shExpMatch(host, "*.cloudflareclient.com") ||
     dnsDomainIs(host, "a.nel.cloudflare.com")
    )
