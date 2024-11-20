@@ -419,6 +419,7 @@ function FindProxyForURL(url, host) {
     dnsDomainIs(host, "policykeyservice.dc.ad.msft.net") ||
     dnsDomainIs(host, ".protection.office.com") ||
     dnsDomainIs(host, ".security.microsoft.com") ||
+    dnsDomainIs(host, ".vsassets.io") ||
     dnsDomainIs(host, "compliance.microsoft.com") ||
     dnsDomainIs(host, "defender.microsoft.com") ||
     dnsDomainIs(host, "protection.office.com") ||
